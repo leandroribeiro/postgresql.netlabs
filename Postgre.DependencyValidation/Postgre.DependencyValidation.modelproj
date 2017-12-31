@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2959f10c-ac79-4ba7-983b-b62161a4ca63}</ProjectGuid>
+    <ArchitectureToolsVersion>2.0.0.0</ArchitectureToolsVersion>
+    <Name>Postgre.DependencyValidation</Name>
+    <RootNamespace>Postgre.DependencyValidation</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Validate Include="DependencyValidation1.layerdiagram">
+      <SubType>Content</SubType>
+    </Validate>
+    <Validate Include="DependencyValidation1.layerdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>DependencyValidation1.layerdiagram</DependentUpon>
+    </Validate>
+    <Validate Include="DependencyValidation1.layerdiagram.suppressions">
+      <SubType>Content</SubType>
+      <DependentUpon>DependencyValidation1.layerdiagram</DependentUpon>
+    </Validate>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Postgre.Core\Postgre.Domain.csproj">
+      <Name>Postgre.Domain</Name>
+      <Project>{48a641d5-a5cd-4df9-a260-0c9f60e7e1c8}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Postgre.NetCore.Console\Postgre.NetCore.Console.csproj">
+      <Name>Postgre.NetCore.Console</Name>
+      <Project>{f03a7386-5cde-4b4c-9a6a-58f063917614}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Postgre.NetCore.Dapper\Postgre.NetCore.Dapper.csproj">
+      <Name>Postgre.NetCore.Dapper</Name>
+      <Project>{94962124-9159-41cd-816c-fc62b0aecb0a}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Postgre.NetCore.EFCore11\Postgre.NetCore.EFCore11.csproj">
+      <Name>Postgre.NetCore.EFCore11</Name>
+      <Project>{b76704d7-1520-4a48-b92b-24e4ae2d9401}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Postgre.NetFull.Console\Postgre.NetFull.Console.csproj">
+      <Name>Postgre.NetFull.Console</Name>
+      <Project>{c940c178-7a91-4773-a4ab-eca0cf27ee4e}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

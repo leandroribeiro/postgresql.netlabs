@@ -1,0 +1,83 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Domain", "1 - Domain", "{F3A0AA55-DE45-4D93-BD5F-860F25B1FE4C}"
+EndProject
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "Postgre.DependencyValidation", "Postgre.DependencyValidation\Postgre.DependencyValidation.modelproj", "{2959F10C-AC79-4BA7-983B-B62161A4CA63}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - Architecture", "0 - Architecture", "{83E0B4F4-CC02-48B7-8A69-EF7156C7C13E}"
+	ProjectSection(SolutionItems) = preProject
+		CodeMap.dgml = CodeMap.dgml
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Postgre.Domain", "Postgre.Domain\Postgre.Domain.csproj", "{18CFDB45-38E3-45C7-A6F2-32EC99A8B448}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Persistence", "3 - Persistence", "{07A28033-BCE8-4A24-B6CF-884BBF415768}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Business", "2 - Business", "{8ACB012E-D80C-4CC8-8365-78EF69B32181}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Postgre.Persistence.Dapper", "Postgre.Persistence.Dapper\Postgre.Persistence.Dapper.csproj", "{9478C330-BB7F-415C-BEB9-9003FE1E492B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Postgre.Persistence.EFCore20", "Postgre.Persistence.EFCore20\Postgre.Persistence.EFCore20.csproj", "{1AE95061-D405-43E1-BD82-988D0D7FE217}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Presentation", "4 - Presentation", "{38A38E77-EBC6-469F-B9FB-9A6037C84C3D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Postgre.Presentation.Console.NETCore20", "Postgre.Presentation.Console.NETCore20\Postgre.Presentation.Console.NETCore20.csproj", "{E2EEFFFE-B8C4-4323-BF2E-76FA83EB355B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Postgre.Presentation.Console.NETFull47", "Postgre.Presentation.Console.NETFull47\Postgre.Presentation.Console.NETFull47.csproj", "{EF9E74C7-2C6B-44E5-8DCF-A4AC1C7DFD42}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Postgre.Persistence.NETFull70.EF62", "Postgre.Persistence.NETFull70.EF62\Postgre.Persistence.NETFull70.EF62.csproj", "{53A173AB-45CF-48FF-929C-C414EC4268A7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2959F10C-AC79-4BA7-983B-B62161A4CA63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2959F10C-AC79-4BA7-983B-B62161A4CA63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2959F10C-AC79-4BA7-983B-B62161A4CA63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2959F10C-AC79-4BA7-983B-B62161A4CA63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18CFDB45-38E3-45C7-A6F2-32EC99A8B448}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18CFDB45-38E3-45C7-A6F2-32EC99A8B448}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18CFDB45-38E3-45C7-A6F2-32EC99A8B448}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18CFDB45-38E3-45C7-A6F2-32EC99A8B448}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9478C330-BB7F-415C-BEB9-9003FE1E492B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9478C330-BB7F-415C-BEB9-9003FE1E492B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9478C330-BB7F-415C-BEB9-9003FE1E492B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9478C330-BB7F-415C-BEB9-9003FE1E492B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AE95061-D405-43E1-BD82-988D0D7FE217}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AE95061-D405-43E1-BD82-988D0D7FE217}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AE95061-D405-43E1-BD82-988D0D7FE217}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AE95061-D405-43E1-BD82-988D0D7FE217}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2EEFFFE-B8C4-4323-BF2E-76FA83EB355B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2EEFFFE-B8C4-4323-BF2E-76FA83EB355B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2EEFFFE-B8C4-4323-BF2E-76FA83EB355B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2EEFFFE-B8C4-4323-BF2E-76FA83EB355B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF9E74C7-2C6B-44E5-8DCF-A4AC1C7DFD42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF9E74C7-2C6B-44E5-8DCF-A4AC1C7DFD42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF9E74C7-2C6B-44E5-8DCF-A4AC1C7DFD42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF9E74C7-2C6B-44E5-8DCF-A4AC1C7DFD42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53A173AB-45CF-48FF-929C-C414EC4268A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53A173AB-45CF-48FF-929C-C414EC4268A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53A173AB-45CF-48FF-929C-C414EC4268A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53A173AB-45CF-48FF-929C-C414EC4268A7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2959F10C-AC79-4BA7-983B-B62161A4CA63} = {83E0B4F4-CC02-48B7-8A69-EF7156C7C13E}
+		{18CFDB45-38E3-45C7-A6F2-32EC99A8B448} = {F3A0AA55-DE45-4D93-BD5F-860F25B1FE4C}
+		{9478C330-BB7F-415C-BEB9-9003FE1E492B} = {07A28033-BCE8-4A24-B6CF-884BBF415768}
+		{1AE95061-D405-43E1-BD82-988D0D7FE217} = {07A28033-BCE8-4A24-B6CF-884BBF415768}
+		{E2EEFFFE-B8C4-4323-BF2E-76FA83EB355B} = {38A38E77-EBC6-469F-B9FB-9A6037C84C3D}
+		{EF9E74C7-2C6B-44E5-8DCF-A4AC1C7DFD42} = {38A38E77-EBC6-469F-B9FB-9A6037C84C3D}
+		{53A173AB-45CF-48FF-929C-C414EC4268A7} = {07A28033-BCE8-4A24-B6CF-884BBF415768}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2FFF8491-570D-499C-B8B1-BDD15042F6BF}
+	EndGlobalSection
+EndGlobal
