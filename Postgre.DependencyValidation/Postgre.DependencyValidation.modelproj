@@ -21,39 +21,43 @@
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
   </PropertyGroup>
   <ItemGroup>
-    <Validate Include="DependencyValidation1.layerdiagram">
-      <SubType>Content</SubType>
-    </Validate>
-    <Validate Include="DependencyValidation1.layerdiagram.layout">
-      <SubType>Content</SubType>
-      <DependentUpon>DependencyValidation1.layerdiagram</DependentUpon>
-    </Validate>
-    <Validate Include="DependencyValidation1.layerdiagram.suppressions">
-      <SubType>Content</SubType>
-      <DependentUpon>DependencyValidation1.layerdiagram</DependentUpon>
-    </Validate>
+    <ProjectReference Include="..\Postgre.Domain\Postgre.Domain.csproj">
+      <Name>Postgre.Domain</Name>
+      <Project>{18cfdb45-38e3-45c7-a6f2-32ec99a8b448}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Postgre.Persistence.Dapper\Postgre.Persistence.Dapper.csproj">
+      <Name>Postgre.Persistence.Dapper</Name>
+      <Project>{9478c330-bb7f-415c-beb9-9003fe1e492b}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Postgre.Persistence.EFCore20\Postgre.Persistence.EFCore20.csproj">
+      <Name>Postgre.Persistence.EFCore20</Name>
+      <Project>{1ae95061-d405-43e1-bd82-988d0d7fe217}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Postgre.Persistence.NETFull70.EF62\Postgre.Persistence.NETFull70.EF62.csproj">
+      <Name>Postgre.Persistence.NETFull70.EF62</Name>
+      <Project>{53a173ab-45cf-48ff-929c-c414ec4268a7}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Postgre.Presentation.Console.NETCore20\Postgre.Presentation.Console.NETCore20.csproj">
+      <Name>Postgre.Presentation.Console.NETCore20</Name>
+      <Project>{e2eefffe-b8c4-4323-bf2e-76fa83eb355b}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Postgre.Presentation.Console.NETFull47\Postgre.Presentation.Console.NETFull47.csproj">
+      <Name>Postgre.Presentation.Console.NETFull47</Name>
+      <Project>{ef9e74c7-2c6b-44e5-8dcf-a4ac1c7dfd42}</Project>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Postgre.Core\Postgre.Domain.csproj">
-      <Name>Postgre.Domain</Name>
-      <Project>{48a641d5-a5cd-4df9-a260-0c9f60e7e1c8}</Project>
-    </ProjectReference>
-    <ProjectReference Include="..\Postgre.NetCore.Console\Postgre.NetCore.Console.csproj">
-      <Name>Postgre.NetCore.Console</Name>
-      <Project>{f03a7386-5cde-4b4c-9a6a-58f063917614}</Project>
-    </ProjectReference>
-    <ProjectReference Include="..\Postgre.NetCore.Dapper\Postgre.NetCore.Dapper.csproj">
-      <Name>Postgre.NetCore.Dapper</Name>
-      <Project>{94962124-9159-41cd-816c-fc62b0aecb0a}</Project>
-    </ProjectReference>
-    <ProjectReference Include="..\Postgre.NetCore.EFCore11\Postgre.NetCore.EFCore11.csproj">
-      <Name>Postgre.NetCore.EFCore11</Name>
-      <Project>{b76704d7-1520-4a48-b92b-24e4ae2d9401}</Project>
-    </ProjectReference>
-    <ProjectReference Include="..\Postgre.NetFull.Console\Postgre.NetFull.Console.csproj">
-      <Name>Postgre.NetFull.Console</Name>
-      <Project>{c940c178-7a91-4773-a4ab-eca0cf27ee4e}</Project>
-    </ProjectReference>
+    <Validate Include="DependencyValidation.layerdiagram">
+      <SubType>Content</SubType>
+    </Validate>
+    <Validate Include="DependencyValidation.layerdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>DependencyValidation.layerdiagram</DependentUpon>
+    </Validate>
+    <Validate Include="DependencyValidation.layerdiagram.suppressions">
+      <SubType>Content</SubType>
+      <DependentUpon>DependencyValidation.layerdiagram</DependentUpon>
+    </Validate>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
 </Project>
