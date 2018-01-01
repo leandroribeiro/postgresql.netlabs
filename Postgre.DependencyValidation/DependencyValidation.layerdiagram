@@ -1,17 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="e4d877fb-c12d-44aa-91aa-4a69f233c11c" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
-  <comments>
-    <comment Id="d9d5a53c-b57e-4186-ba9b-e38a9a3d0e43" name="Comment1" />
-  </comments>
   <layers>
-    <layer Id="065a966b-593f-4601-9351-827291ae82b5" name="Postgre.Persistence.Dapper.dll">
+    <layer Id="5d1bc434-79cb-4fe0-954d-3c136242fe8d" name="Postgre.Domain.dll">
+      <references>
+        <reference Id="1ed88fcc-0990-423c-9f28-90b14fd79eca" name="Postgre.Domain.dll">
+          <ArtifactNode Label="Postgre.Domain.dll" Category="CodeSchema_Assembly" Id="(Assembly=../Postgre.Domain/bin/Debug/netstandard2.0/Postgre.Domain.dll)" />
+          <ExpandedNode Id="(Assembly=Postgre.Domain)" Label="Postgre.Domain.dll" Category="CodeSchema_Assembly">
+            <Category Ref="FileSystem.Category.FileOfType.dll" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="a404aaf5-d806-40e3-a044-79ca77b57b68" name="Postgre.Persistence.Dapper.dll">
       <dependencyToLayers>
-        <dependencyFromLayerToLayer Id="92253989-7521-4d00-94be-4f6123ec3411" direction="Forward">
-          <layerMoniker Id="220ae36a-ea1d-4a38-b1f9-03c8ac02319b" />
+        <dependencyFromLayerToLayer Id="e80518bc-944a-47f6-a529-d50ec44650b6" direction="Forward">
+          <layerMoniker Id="5d1bc434-79cb-4fe0-954d-3c136242fe8d" />
         </dependencyFromLayerToLayer>
       </dependencyToLayers>
       <references>
-        <reference Id="9750c3f4-8e1c-437d-a9aa-6c868eb60e7a" name="Postgre.Persistence.Dapper.dll">
+        <reference Id="b02df98b-53f5-4f0b-a650-0847f367767b" name="Postgre.Persistence.Dapper.dll">
           <ArtifactNode Label="Postgre.Persistence.Dapper.dll" Category="CodeSchema_Assembly" Id="(Assembly=../Postgre.Persistence.Dapper/bin/Debug/netstandard2.0/Postgre.Persistence.Dapper.dll)" />
           <ExpandedNode Id="(Assembly=Postgre.Persistence.Dapper)" Label="Postgre.Persistence.Dapper.dll" Category="CodeSchema_Assembly">
             <Category Ref="FileSystem.Category.FileOfType.dll" />
@@ -20,14 +28,14 @@
         </reference>
       </references>
     </layer>
-    <layer Id="72e14f84-2fb4-4d4a-8013-2ed2e0ea6b51" name="Postgre.Persistence.EFCore20.dll">
+    <layer Id="3b9eb32f-3991-4f16-ae78-e24d569138e6" name="Postgre.Persistence.EFCore20.dll">
       <dependencyToLayers>
-        <dependencyFromLayerToLayer Id="e3ce7d5a-4f36-4721-947d-e0646cc332a3" direction="Forward">
-          <layerMoniker Id="220ae36a-ea1d-4a38-b1f9-03c8ac02319b" />
+        <dependencyFromLayerToLayer Id="a90191b5-74f1-4ebf-b6e2-7600880e2156" direction="Forward">
+          <layerMoniker Id="5d1bc434-79cb-4fe0-954d-3c136242fe8d" />
         </dependencyFromLayerToLayer>
       </dependencyToLayers>
       <references>
-        <reference Id="231a18fd-4fe1-4c6e-9521-a1eb65e95ccd" name="Postgre.Persistence.EFCore20.dll">
+        <reference Id="5aec7a7c-c75d-40df-a73f-13be7bedaed5" name="Postgre.Persistence.EFCore20.dll">
           <ArtifactNode Label="Postgre.Persistence.EFCore20.dll" Category="CodeSchema_Assembly" Id="(Assembly=../Postgre.Persistence.EFCore20/bin/Debug/netstandard2.0/Postgre.Persistence.EFCore20.dll)" />
           <ExpandedNode Id="(Assembly=Postgre.Persistence.EFCore20)" Label="Postgre.Persistence.EFCore20.dll" Category="CodeSchema_Assembly">
             <Category Ref="FileSystem.Category.FileOfType.dll" />
@@ -36,14 +44,14 @@
         </reference>
       </references>
     </layer>
-    <layer Id="5bd93d22-df7c-45ab-aa4f-d1a45c5bef9b" name="Postgre.Persistence.NETFull70.EF62.dll">
+    <layer Id="8153366c-9945-415c-a834-483d02ff25f7" name="Postgre.Persistence.NETFull70.EF62.dll">
       <dependencyToLayers>
-        <dependencyFromLayerToLayer Id="e779ddf7-6e91-4b2a-a510-8e253dd5082c" direction="Forward">
-          <layerMoniker Id="220ae36a-ea1d-4a38-b1f9-03c8ac02319b" />
+        <dependencyFromLayerToLayer Id="875da759-5440-4815-bf4f-d50cbe392ecb" direction="Forward">
+          <layerMoniker Id="5d1bc434-79cb-4fe0-954d-3c136242fe8d" />
         </dependencyFromLayerToLayer>
       </dependencyToLayers>
       <references>
-        <reference Id="b6e00100-6385-45d6-a50a-a8afaab53415" name="Postgre.Persistence.NETFull70.EF62.dll">
+        <reference Id="c52d6b81-34f6-42fe-84b1-feda49c473c5" name="Postgre.Persistence.NETFull70.EF62.dll">
           <ArtifactNode Label="Postgre.Persistence.NETFull70.EF62.dll" Category="CodeSchema_Assembly" Id="(Assembly=../Postgre.Persistence.NETFull70.EF62/bin/Debug/Postgre.Persistence.NETFull70.EF62.dll)" />
           <ExpandedNode Id="(Assembly=Postgre.Persistence.NETFull70.EF62)" Label="Postgre.Persistence.NETFull70.EF62.dll" Category="CodeSchema_Assembly">
             <Category Ref="FileSystem.Category.FileOfType.dll" />
@@ -52,17 +60,20 @@
         </reference>
       </references>
     </layer>
-    <layer Id="928e7c25-3365-4d8f-9257-56bddbd80fac" name="Postgre.Presentation.Console.NETCore20.dll">
+    <layer Id="f60f91b2-eaef-46c9-9487-54b96e95a3f5" name="Postgre.Presentation.Console.NETCore20.dll">
       <dependencyToLayers>
-        <dependencyFromLayerToLayer Id="a6a8cc8d-e13e-460e-a91b-592ce2bb855c" direction="Forward">
-          <layerMoniker Id="065a966b-593f-4601-9351-827291ae82b5" />
+        <dependencyFromLayerToLayer Id="1f0e947d-4ed4-409a-a3d3-0f9159401c98" direction="Forward">
+          <layerMoniker Id="a404aaf5-d806-40e3-a044-79ca77b57b68" />
         </dependencyFromLayerToLayer>
-        <dependencyFromLayerToLayer Id="187a9525-dba7-4892-afa1-9288d72e2fd0" direction="Forward">
-          <layerMoniker Id="72e14f84-2fb4-4d4a-8013-2ed2e0ea6b51" />
+        <dependencyFromLayerToLayer Id="458b5773-ba1c-484a-a976-fe0dc0c2c3e4" direction="Forward">
+          <layerMoniker Id="3b9eb32f-3991-4f16-ae78-e24d569138e6" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="a6940fd4-99b5-4014-8b27-fc920a09be7a" direction="Forward">
+          <layerMoniker Id="5d1bc434-79cb-4fe0-954d-3c136242fe8d" />
         </dependencyFromLayerToLayer>
       </dependencyToLayers>
       <references>
-        <reference Id="dd2db4f6-e7e3-4a4e-8925-8d06012ca3aa" name="Postgre.Presentation.Console.NETCore20.dll">
+        <reference Id="1caa5467-b276-41f9-8793-608b5543ea0f" name="Postgre.Presentation.Console.NETCore20.dll">
           <ArtifactNode Label="Postgre.Presentation.Console.NETCore20.dll" Category="CodeSchema_Assembly" Id="(Assembly=../Postgre.Presentation.Console.NETCore20/bin/Debug/netcoreapp2.0/Postgre.Presentation.Console.NETCore20.dll)" />
           <ExpandedNode Id="(Assembly=Postgre.Presentation.Console.NETCore20)" Label="Postgre.Presentation.Console.NETCore20.dll" Category="CodeSchema_Assembly">
             <Category Ref="FileSystem.Category.FileOfType.dll" />
@@ -71,28 +82,20 @@
         </reference>
       </references>
     </layer>
-    <layer Id="25d0f41b-51e3-4502-9900-5dad971a2b94" name="Postgre.Presentation.Console.NETFull47.exe">
+    <layer Id="c3cd25ca-1f35-4264-9e13-baffe645220c" name="Postgre.Presentation.Console.NETFull47.exe">
       <dependencyToLayers>
-        <dependencyFromLayerToLayer Id="02ecd98a-66d9-4e94-841a-e28de8113abb" direction="Forward">
-          <layerMoniker Id="5bd93d22-df7c-45ab-aa4f-d1a45c5bef9b" />
+        <dependencyFromLayerToLayer Id="e7cb3425-1cb4-4e73-976f-f7667da44b9a" direction="Forward">
+          <layerMoniker Id="8153366c-9945-415c-a834-483d02ff25f7" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="0793776d-5376-4e0a-a551-417a1d4028a9" direction="Forward">
+          <layerMoniker Id="5d1bc434-79cb-4fe0-954d-3c136242fe8d" />
         </dependencyFromLayerToLayer>
       </dependencyToLayers>
       <references>
-        <reference Id="8079a266-7828-4a10-93c8-520ec3b21125" name="Postgre.Presentation.Console.NETFull47.exe">
+        <reference Id="c6f91267-c2b3-413c-97ff-6c7563a8843b" name="Postgre.Presentation.Console.NETFull47.exe">
           <ArtifactNode Label="Postgre.Presentation.Console.NETFull47.exe" Category="CodeSchema_Assembly" Id="(Assembly=../Postgre.Presentation.Console.NETFull47/bin/Debug/Postgre.Presentation.Console.NETFull47.exe)" />
           <ExpandedNode Id="(Assembly=Postgre.Presentation.Console.NETFull47)" Label="Postgre.Presentation.Console.NETFull47.exe" Category="CodeSchema_Assembly">
             <Category Ref="FileSystem.Category.FileOfType.exe" />
-            <LinkCategory Ref="Represents" />
-          </ExpandedNode>
-        </reference>
-      </references>
-    </layer>
-    <layer Id="220ae36a-ea1d-4a38-b1f9-03c8ac02319b" name="Postgre.Domain.dll">
-      <references>
-        <reference Id="3d3f47e7-6587-478f-9ac1-b309792d9705" name="Postgre.Domain.dll">
-          <ArtifactNode Label="Postgre.Domain.dll" Category="CodeSchema_Assembly" Id="(Assembly=../Postgre.Domain/bin/Debug/netstandard2.0/Postgre.Domain.dll)" />
-          <ExpandedNode Id="(Assembly=Postgre.Domain)" Label="Postgre.Domain.dll" Category="CodeSchema_Assembly">
-            <Category Ref="FileSystem.Category.FileOfType.dll" />
             <LinkCategory Ref="Represents" />
           </ExpandedNode>
         </reference>
